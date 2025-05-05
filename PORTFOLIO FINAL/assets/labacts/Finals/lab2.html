@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script type="text/javascript">
+        function calculate() {
+            var num1 = parseFloat(document.getElementById("num").value);
+            if (num1 % 2 == 0) {
+                document.getElementById("result").innerHTML = "THE NUMBER IS EVEN";
+            }else{
+                document.getElementById("result").innerHTML = "THE NUMBER IS ODD";
+            }
+            if(num1<=1){
+                document.getElementById("result2").innerHTML = "INVALID";
+            }
+            var count=0;
+            for(let i=1; i<=num1; i++){
+                if(num1%i==0){
+                    count=count+1;
+                }
+            }
+            if(num1<=1){
+                document.getElementById("result2").innerHTML = "INVALID";
+            }
+            else if(count<=2){
+                document.getElementById("result2").innerHTML = "PRIME";
+            }else{
+                document.getElementById("result2").innerHTML = "COMPOSITE";
+            }
+            
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" id="num" placeholder="ENTER A NUMBER"> <button onclick="calculate();">Submit</button>
+
+    <div id = "result"></div>
+    <div id = "result2"></div>
+</body>
+</html>

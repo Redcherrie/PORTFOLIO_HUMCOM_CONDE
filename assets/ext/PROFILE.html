@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    pre{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+    }
+</style>
+<body class="light-theme">
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="/FINAL_PORTFOLIO_HUMCOM/assets/ext/WORKS.html" class="nav-link">WORKS</a>
+            <a href="/FINAL_PORTFOLIO_HUMCOM/index.html" class="nav-link">ABOUT ME</a>
+            <a href="/FINAL_PORTFOLIO_HUMCOM/index.html#skills" class="nav-link">SKILLS</a>  
+        </div>
+        <a href="/FINAL_PORTFOLIO_HUMCOM/index.html" class="nav-link navbar-center">Cortez<span>JIJIMON</span></a>
+        <div class="nav-links">
+            <a href="/FINAL_PORTFOLIO_HUMCOM/assets/ext/PROFILE.html" class="nav-link">PROFILE</a>
+            <a href="/FINAL_PORTFOLIO_HUMCOM/index.html#contact" class="nav-link">CONTACT</a>
+        </div>
+    </nav>
+    <div class="hero-section">
+    <div id="profile" class="section">
+        <h1>PROFILE</h1>
+        <div class="profile">
+        <h1 style = 'text-align:center;color:rgb(194, 144, 144)'>JERLYN JYD CORTEZ </h1>
+        <hr size="5"; color="white">
+        <h3>PERSONAL INFORMATION</h3>
+        <hr size="5"; color="white">
+        <pre><b>Age:</b>                                                 19</pre>
+        <pre><b>Gender:</b>                                           Female </pre>
+        <pre><b>Date of Birth:</b>                                 October 27,2005</pre>
+        <pre><b>Place of Birth:</b>                                Baguio General Hospital</pre>
+        <pre><b>Contact No.</b>                                    09695057681         </pre>
+        <pre><b>Main Benguet Adress:</b>                   Ambangeg, Daclan, Bokod, Benguet</pre>
+        <pre><b>Current Benguet Adress:</b>              Wangal Motorpool</pre>
+        <hr size="5"; color="white">
+        <h3>EDUCATION</h3>
+        <hr size="5"; color="white">
+        <pre><b>College</b>                             June 2026<br>
+                                                Bachelor of Science in Computer Science<br>
+                                                University of Baguio<br>
+                                                Baguio City</pre>
+                                       <pre>
+        
+        
+                                       </pre> 
+                                         
+        
+        <pre><b>High School</b>                         July 2024<br>
+                                                Ambangeg National High School<br>
+                                                Ambangeg, Daclan, Bokod, Beneguet</pre>
+                                       <pre>
+        
+        
+                                       </pre> 
+                                      
+        <pre><b>Elementary</b>                          July 2018<br>
+                                                Ambangeg Elementary School<br>
+                                                Ambangeg, Daclan, Bokod, Benguet</pre>  
+                                       <pre>
+        
+        
+                                       </pre>   
+        <hr size="5"; color="white">                                                      
+        <h3>AWARDS & RECOGNITION</h3>
+        <hr size="5"; color="white">
+        <pre><b>First Place</b>                    Coffee Painting<br>
+                                               Ambangeg National High School<br>
+                                                March 2024<br>
+                                               Bokod, Benguet</pre>
+                                       <pre>
+        
+        
+                                       </pre> 
+        <pre><b>First Place</b>                    Slogan making<br>
+                                               Ambangeg National High School<br>
+                                               March 2024<br>
+                                               Bokod, Benguet</pre>
+                                       <pre>
+        
+        
+                                       </pre> 
+        <pre><b>Second Place</b>                   Badminton Doubles<br>
+                                               Daclan, Bokod, Benguet<br>
+                                               August 2023<br>
+                                               Bokod, Benguet</pre>
+                                       <pre>
+        
+        
+                                       </pre> 
+         <hr size="5"; color="white">
+        <h3>SKILLS & TALENTS</h3>
+        <hr size="5"; color="white">
+        <pre>
+            
+        </pre> 
+        <pre>- Playing Badminton, Playing lyre, Drawing</pre>
+        <pre>
+        
+        </pre> 
+        <hr size="5"; color="white">
+        <pre>  
+        </pre>
+    </div>
+    </div>
+
+    </div>
+
+    <script>
+        const themeToggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+    
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-theme');
+            body.classList.remove('light-theme');
+            if (themeToggleButton) themeToggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+        } else {
+            body.classList.add('light-theme');
+            body.classList.remove('dark-theme');
+            if (themeToggleButton) themeToggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+    
+    
+        if (themeToggleButton) {
+            themeToggleButton.addEventListener('click', () => {
+                if (body.classList.contains('light-theme')) {
+                    body.classList.add('dark-theme');
+                    body.classList.remove('light-theme');
+                    themeToggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    body.classList.add('light-theme');
+                    body.classList.remove('dark-theme');
+                    themeToggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

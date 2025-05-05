@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KM to CM Converter</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ffe6e6, #ffc2c2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    #converter-box {
+      background: #fff0f5;
+      padding: 30px;
+      width: 360px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(255, 105, 135, 0.2);
+      border: 2px solid #ff6b81;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e63946;
+      margin-bottom: 25px;
+      font-size: 26px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 2px solid #ff7b7b;
+      border-radius: 8px;
+      background-color: #fff7f9;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff5e78;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e6495f;
+    }
+
+    #result {
+      margin-top: 25px;
+      font-size: 22px;
+      color: #b3003c;
+      text-align: center;
+      font-family: 'Georgia', serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="converter-box">
+    <h1>KM to CM Converter</h1>
+    <input type="text" id="num1" placeholder="Enter kilometers" />
+    <button onclick="calculate1();">Convert</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function calculate1() {
+      const num1 = parseFloat(document.getElementById("num1").value);
+      const result = document.getElementById("result");
+
+      result.textContent = "";
+
+      if (isNaN(num1)) {
+        result.textContent = "Please enter a valid number.";
+        return;
+      }
+
+      const cm = num1 * 100000;
+      result.textContent = `${num1} kilometer${num1 !== 1 ? 's' : ''} = ${cm.toLocaleString()} cm`;
+    }
+  </script>
+
+</body>
+</html>

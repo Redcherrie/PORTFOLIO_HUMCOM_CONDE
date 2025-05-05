@@ -1,0 +1,17 @@
+
+  table {
+   border-spacing: 0px;
+   margin: auto;
+  }
+  td{
+    padding: 20px;
+  }
+  tr{
+
+    text-align: center;
+    color: rgb(240, 227, 211);
+    background-color: rgb(105, 98, 88);
+  }
+  #eme{
+    background-color: rgb(153, 138, 116)
+  }

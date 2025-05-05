@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Red Aesthetic Number Checker</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #ffe5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #content {
+      background: #ffcccc;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(255, 100, 100, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      border: 2px solid #cc6666;
+    }
+
+    h1 {
+      margin-bottom: 25px;
+      color: #a94442;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #cc6666;
+      border-radius: 8px;
+      background-color: #fff5f5;
+    }
+
+    #menu {
+      width: 100%;
+      padding: 12px;
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #menu:hover {
+      background-color: #c9302c;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 24px;
+      font-family: 'Times New Roman', Times, serif;
+      color: #800000;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <h1>Number Checker</h1>
+    <input type="text" id="num1" placeholder="Enter a number" />
+    <button id="menu" onclick="Answer();">Check</button>
+    <div id="result1" class="result"></div>
+    <div id="result2" class="result"></div>
+  </div>
+
+  <script>
+    function getResult() {
+      const num1 = parseFloat(document.getElementById("num1").value);
+      return [num1];
+    }
+
+    function Answer() {
+      const [num1] = getResult();
+      let count = 0;
+
+      const result1 = document.getElementById('result1');
+      const result2 = document.getElementById('result2');
+
+      result1.textContent = "";
+      result2.textContent = "";
+
+      if (isNaN(num1)) {
+        result1.textContent = "PLEASE ENTER A VALID NUMBER";
+        return;
+      }
+
+      // Even or Odd
+      result1.textContent = (num1 % 2 === 0) ? "The number is EVEN" : "The number is ODD";
+
+      // Prime or Composite
+      if (num1 <= 1) {
+        result2.textContent = "INVALID (Must be greater than 1)";
+      } else {
+        for (let i = 1; i <= num1; i++) {
+          if (num1 % i === 0) count++;
+        }
+        result2.textContent = (count === 2) ? "The number is PRIME" : "The number is COMPOSITE";
+      }
+    }
+  </script>
+</body>
+</html>

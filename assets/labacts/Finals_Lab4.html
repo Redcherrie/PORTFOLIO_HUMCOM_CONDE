@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lab Exercise 4</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7e4e4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    h2 {
+      color: #5a2a2a;
+      margin-bottom: 20px;
+    }
+
+    #menu {
+      padding: 10px 20px;
+      background-color: #ad7979;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    #menu:hover {
+      background-color: #944f4f;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: auto;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border: 1px solid #d6a8a8;
+      padding: 12px 18px;
+      text-align: center;
+      font-weight: bold;
+      color: #4a4a4a;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9dede;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #fceeee;
+    }
+  </style>
+</head>
+<body>
+  <h2>Multiplication Table</h2>
+  <button id="menu" onclick="Table()">Generate Table</button>
+  <table id="multiplicationTable"></table>
+
+  <script>
+    function Table() {
+      let rows = prompt("Enter number of rows:");
+      let columns = prompt("Enter number of columns:");
+      let table = document.getElementById("multiplicationTable");
+
+      if (!rows || !columns || rows <= 0 || columns <= 0) {
+        alert("Please enter valid positive numbers.");
+        return;
+      }
+
+      table.innerHTML = "";
+
+      for (let i = 1; i <= rows; i++) {
+        let row = table.insertRow();
+        for (let j = 1; j <= columns; j++) {
+          let cell = row.insertCell();
+          cell.textContent = i * j;
+        }
+      }
+    }
+  </script>
+</body>
+</html>

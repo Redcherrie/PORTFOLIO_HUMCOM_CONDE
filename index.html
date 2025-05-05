@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+      
+</head>
+<style>
+
+    .theme-toggle-btn {
+    position: fixed; 
+    top: 10px;
+    right: 20px;
+    z-index: 1051;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 50%; 
+}
+
+
+    .theme-toggle-btn:hover {
+        background-color: #f0f0f0;
+    }
+    
+</style>
+<body class="light-theme">
+   
+    <button class="theme-toggle-btn btn" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    
+
+    <nav class="navbar navbar-expand-lg fixed-top shadow">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand d-lg-none mx-auto" href="#top">Cortez<span id="ji">JIJIMON</span></a>
+      
+         
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+       
+          <div class="collapse navbar-collapse" id="navbarContent">
+          
+            <div class="nav-links navbar-nav me-auto">
+              <a href="#works" class="nav-link">WORKS</a>
+              <a href="#about" class="nav-link">ABOUT ME</a>
+              <a href="#skills" class="nav-link">SKILLS</a>
+            </div>
+      
+            
+            <a href="#top" class="nav-link navbar-center d-none d-lg-block">Cortez<span>JIJIMON</span></a>
+      
+           
+            <div class="nav-links navbar-nav ms-auto">
+              <a href="#profile" class="nav-link">PROFILE</a>
+              <a href="#contact" class="nav-link">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+    
+    <div class="hero-section">
+        <div class="title">
+            <div class="text-container">
+                <div class="text-letter">C</div>
+                <div class="text-letter">O</div>
+                <div class="text-letter">R</div>
+                <div class="text-letter">T</div>
+                <div class="text-letter">E</div>
+                <div class="text-letter">Z</div>
+            </div>
+        </div>
+    
+        <div id="about" class="section">
+            <h1>ABOUT ME</h1>
+            <p>
+                Hi! this is Cortez. I'm just starting out in the world of web development and design, and this site is one of my first real projects. 
+                Everything you're seeing here is part of my learning journey — from building layouts to trying out cool animations and design ideas. 
+                I'm still figuring things out as I go, but I'm excited to keep learning, experimenting, and improving. 
+                Thanks for checking this out and being part of my growth!
+            </p>
+        </div>
+    </div>
+
+
+<div id="skills" class="section">
+    <h1>SKILLS</h1>
+    <div class="container">
+        <div class="row">
+       
+            <div class="col-12 col-md-6">
+                <p>HTML</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+            </div>
+
+          
+            <div class="col-12 col-md-6">
+                <p>CSS</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+            </div>
+
+          
+            <div class="col-12 col-md-6">
+                <p>JavaScript</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <p>Bootstrap</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+    <div id="works" class="section">
+        <h1>WORKS</h1>
+    
+    <h2 class="mt-4 mb-3">Prelims</h2>
+    <div class="container">
+        <div class="row g-4">
+           <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100 shadow-sm" onclick="window.open('/FINAL_PORTFOLIO_HUMCOM/assets/labacts/LabExercise1A.html', '_blank')" style="cursor: pointer;">
+                <iframe src="/FINAL_PORTFOLIO_HUMCOM/assets/labacts/LabExercise1A.html" class="card-img-top" alt="Project 1"></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">LabExercise1</h5>
+                    <p class="card-text">A resume-style layout using basic HTML structure.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100 shadow-sm" onclick="window.open('/FINAL_PORTFOLIO_HUMCOM/assets/labacts/LabExercise2.html', '_blank')" style="cursor: pointer;">
+                <iframe src="/FINAL_PORTFOLIO_HUMCOM/assets/labacts/LabExercise2.html" class="card-img-top" alt="Project 2"></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">LabExercise2</h5>
+                    <p class="card-text">Demonstrates sample polynomial expressions using semantic HTML.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100 shadow-sm" onclick="window.open('/FINAL_PORTFOLIO_HUMCOM/assets/labacts/LabExercise3.html', '_blank')" style="cursor: pointer;">
+                <iframe src="/FINAL_PORTFOLIO_HUMCOM/assets/labacts/LabExercise3.html" class="card-img-top" alt="Project 3"></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">LabExercise3</h5>
+                    <p class="card-text">Utilizes HTML lists (ordered and unordered) for clean content structure.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100 shadow-sm" onclick="window.open('/FINAL_PORTFOLIO_HUMCOM/assets/labacts/Cortez_Lab exercise 4.html', '_blank')" style="cursor: pointer;">
+                <iframe src="/FINAL_PORTFOLIO_HUMCOM/assets/labacts/Cortez_Lab exercise 4.html" class="card-img-top" alt="Project 4"></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">LabExercise4</h5>
+                    <p class="card-text">Implements hyperlinks for  external page navigation.</p>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    
+   
+        <div class="text-center mt-4">
+            <a href="/FINAL_PORTFOLIO_HUMCOM/assets/ext/WORKS.html" class="btn btn-outline-light">See More</a>
+        </div>
+    </div>
+        
+        <h2 class="mt-5 mb-3">Midterms</h2>
+        <div class="container">
+            <div class="row g-4 align-items-stretch">
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark text-white h-100 shadow-sm" onclick="window.open('/FINAL_PORTFOLIO_HUMCOM/assets/labacts/ExerciseCSS1.html', '_blank')" style="cursor: pointer;">
+                        <iframe src="/FINAL_PORTFOLIO_HUMCOM/assets/labacts/ExerciseCSS1.html" class="card-img-top" alt="Project 1"></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">ExerCSS1</h5>
+                            <p class="card-text">Revises Prelims #2 using CSS to style the polynomial expressions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark text-white h-100 shadow-sm" onclick="window.open('/FINAL_PORTFOLIO_HUMCOM/assets/labacts/ExerciseCSS2a.html', '_blank')" style="cursor: pointer;">
+                        <iframe src="/FINAL_PORTFOLIO_HUMCOM/assets/labacts/ExerciseCSS2a.html" class="card-img-top" alt="Project 2"></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">ExerCSS2a</h5>
+                            <p class="card-text">Styles ExerCSS1 with added background images and enhanced layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark text-white h-100 shadow-sm" onclick="window.open('/FINAL_PORTFOLIO_HUMCOM/assets/labacts/ExerciseCSS2b.html', '_blank')" style="cursor: pointer;">
+                        <iframe src="/FINAL_PORTFOLIO_HUMCOM/assets/labacts/ExerciseCSS2b.html" class="card-img-top" alt="Project 3"></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">ExerCSS2b</h5>
+                            <p class="card-text">Applies external CSS to Prelims #5 for cleaner and consistent styling.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card bg-dark text-white h-100 shadow-sm" onclick="window.open('/FINAL_PORTFOLIO_HUMCOM/assets/labacts/ExerciseCSS3.html', '_blank')" style="cursor: pointer;">
+                        <iframe src="/FINAL_PORTFOLIO_HUMCOM/assets/labacts/ExerciseCSS3.html" class="card-img-top" alt="Project 4"></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">ExerCSS3</h5>
+                            <p class="card-text">Uses external CSS to enhance hyperlinks with hover, visited, and active states.</p>
+                        </div>
+                    </div>
+                </div>
+               
+
+            </div>
+                <div class="text-center mt-4">
+                    <a href="/FINAL_PORTFOLIO_HUMCOM/assets/ext/WORKS.html" class="btn btn-outline-light">See More</a>
+                </div>
+            </div>
+
+            <h2 class="mt-5 mb-3">Finals</h2>
+            <div class="container">
+                <div class="row g-4 align-items-stretch">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card bg-dark text-white h-100 shadow-sm" onclick="window.open('/FINAL_PORTFOLIO_HUMCOM/assets/labacts/Finals_Lab1.html', '_blank')" style="cursor: pointer;">
+                            <iframe src="/FINAL_PORTFOLIO_HUMCOM/assets/labacts/Finals_Lab1.html" class="card-preview" title="Finals_Lab1 Preview"></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Finals_Lab1</h5>
+                                <p class="card-text">A simple calculator that performs basic arithmetic operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card bg-dark text-white h-100 shadow-sm" onclick="window.open('/FINAL_PORTFOLIO_HUMCOM/assets/labacts/Finals_Lab2.html', '_blank')" style="cursor: pointer;">
+                            <iframe src="/FINAL_PORTFOLIO_HUMCOM/assets/labacts/Finals_Lab2.html" class="card-preview" title="Finals_Lab2 Preview"></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Finals_Lab2</h5>
+                                <p class="card-text">Checks whether a number is prime/composite and odd/even.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card bg-dark text-white h-100 shadow-sm" onclick="window.open('/FINAL_PORTFOLIO_HUMCOM/assets/labacts/Finals_Lab3.html', '_blank')" style="cursor: pointer;">
+                            <iframe src="/FINAL_PORTFOLIO_HUMCOM/assets/labacts/Finals_Lab3.html" class="card-preview" title="Finals_Lab3 Preview"></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Finals_Lab3</h5>
+                                <p class="card-text">Converts kilometers to centimeters using JavaScript input/output.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card bg-dark text-white h-100 shadow-sm" onclick="window.open('/FINAL_PORTFOLIO_HUMCOM/assets/labacts/Finals_Lab4.html', '_blank')" style="cursor: pointer;">
+                            <iframe src="/FINAL_PORTFOLIO_HUMCOM/assets/labacts/Finals_Lab4.html" class="card-preview" title="Finals_Lab4 Preview"></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Finals_Lab4</h5>
+                                <p class="card-text">Generates a multiplication table based on user input.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+        <div id="profile" class="section">
+            <h1>PROFILE</h1>
+            <div class="profile">
+            <h1 style = 'text-align:center;color:rgb(194, 144, 144)'>JERLYN JYD CORTEZ </h1>
+            <hr size="5"; color=" black">
+            <h3>PERSONAL INFORMATION</h3>
+            <hr size="5"; color=" black">
+            <pre><b>Age:</b>                                 19</pre>
+            <pre><b>Gender:</b>                              Female </pre>
+            <pre><b>Date of Birth:</b>                       October 27,2005</pre>
+            <pre><b>Place of Birth:</b>                      Baguio General Hospital</pre>
+            <pre><b>Contact No.</b>                          09695057681         </pre>
+            <pre><b>Main Benguet Adress:</b>                 Ambangeg, Daclan, Bokod, Benguet</pre>
+            <pre><b>Current Benguet Adress:</b>              Wangal Motorpool</pre>
+            <hr size="5"; color=" black">
+            <h3>EDUCATION</h3>
+            <hr size="5"; color=" black">
+          
+        </div>
+        <div class="text-center mt-4">
+            <a href="/FINAL_PORTFOLIO_HUMCOM/assets/ext/PROFILE.html" class="btn btn-outline-light">View More</a>
+        </div>
+        </div>
+        <div id="contact" class="section">
+            <h1>CONTACT</h1>
+            <p>Feel free to connect with me through any of the platforms below!</p>
+          
+            <ul class="contact-list">
+                <li>
+                    <a href="https://www.facebook.com/Jerlyn.Jyd.Cortez?rdid=siOqPRyny9B8nHkE&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16Nf5xFZ9D%2F#" target="_blank" class="contact-link">
+                      <i class="fab fa-facebook-f social-icon"></i>
+                      <span>Jerlyn Jyd Motal Cortez</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/jiji_jiieeee?igsh=eXd5Y3B0bGptbW1t" target="_blank" class="contact-link">
+                      <i class="fab fa-instagram social-icon"></i>
+                      <span>@jiji_jiieeee</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/jijijiieee?t=plGPi5O5fihnZmGBZd1U6Q&s=09" target="_blank" class="contact-link">
+                      <i class="fab fa-twitter social-icon"></i>
+                      <span>@jijiieee</span>
+                    </a>
+                  </li>
+                <li class="contact-link">
+                  <i class="fas fa-envelope social-icon" ></i>
+                  <span>20243433@s.ubaguio.edu</span>
+                </li>
+                <li class="contact-link">
+                  <i class="fas fa-phone-alt social-icon"></i>
+                  <span>+63 9695057681</span>
+                </li>
+              </ul>
+
+              <p class="mt-4">Alternatively, you can reach out to me by filling out the contact form below:</p>
+
+              <form id="contact-form" class="contact-form" onsubmit="return validateForm()">
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Full Name</label>
+                      <input type="text" id="name" class="form-control" placeholder="Enter your full name">
+                      <div class="invalid-feedback" id="name-error">Please enter your full name.</div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email Address</label>
+                      <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                      <div class="invalid-feedback" id="email-error">Please enter a valid email address.</div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea id="message" class="form-control" rows="4" placeholder="Write your message"></textarea>
+                      <div class="invalid-feedback" id="message-error">Please write your message.</div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+
+            <footer class="text-center py-4">
+                <p>&copy; 2025 Cortez JIJIMON. All rights reserved.</p>
+            </footer>
+
+
+<div id="scrollToTopBtn" class="scroll-button">
+    <span>^</span> 
+    SCROLL UP
+  </div>
+
+  <div id="scrollDownBtn" class="scroll-button">
+    SCROLL DOWN
+    <span>v</span> 
+  </div>
+  
+  
+  
+              
+
+            <script>
+                const themeToggleButton = document.getElementById('theme-toggle');
+                const body = document.body;
+            
+              
+                if (localStorage.getItem('theme') === 'dark') {
+                    body.classList.add('dark-theme');
+                    body.classList.remove('light-theme');
+                    if (themeToggleButton) themeToggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+                } else {
+                    body.classList.add('light-theme');
+                    body.classList.remove('dark-theme');
+                    if (themeToggleButton) themeToggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+                }
+            
+               
+                if (themeToggleButton) {
+                    themeToggleButton.addEventListener('click', () => {
+                        if (body.classList.contains('light-theme')) {
+                            body.classList.add('dark-theme');
+                            body.classList.remove('light-theme');
+                            themeToggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+                            localStorage.setItem('theme', 'dark');
+                        } else {
+                            body.classList.add('light-theme');
+                            body.classList.remove('dark-theme');
+                            themeToggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+                            localStorage.setItem('theme', 'light');
+                        }
+                    });
+                }
+
+                function validateForm() {
+            let isValid = true;
+
+          
+            const name = document.getElementById('name');
+            const nameError = document.getElementById('name-error');
+            if (name.value.trim() === "") {
+                name.classList.add('is-invalid');
+                nameError.style.display = 'block';
+                isValid = false;
+            } else {
+                name.classList.remove('is-invalid');
+                nameError.style.display = 'none';
+            }
+
+            
+            const email = document.getElementById('email');
+            const emailError = document.getElementById('email-error');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value.trim())) {
+                email.classList.add('is-invalid');
+                emailError.style.display = 'block';
+                isValid = false;
+            } else {
+                email.classList.remove('is-invalid');
+                emailError.style.display = 'none';
+            }
+
+            const message = document.getElementById('message');
+            const messageError = document.getElementById('message-error');
+            if (message.value.trim() === "") {
+                message.classList.add('is-invalid');
+                messageError.style.display = 'block';
+                isValid = false;
+            } else {
+                message.classList.remove('is-invalid');
+                messageError.style.display = 'none';
+            }
+
+            return isValid;
+        }
+
+          
+let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+let scrollDownBtn = document.getElementById("scrollDownBtn");
+
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";  
+  } else {
+    scrollToTopBtn.style.display = "none";   
+  }
+
+  
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    scrollDownBtn.style.display = "none";   
+  } else {
+    scrollDownBtn.style.display = "block";  
+  }
+};
+
+
+scrollToTopBtn.addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
+scrollDownBtn.addEventListener("click", function() {
+  window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+});
+
+
+
+
+            </script>
+          
+</body>
+</html>

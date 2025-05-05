@@ -1,0 +1,17 @@
+
+a:link {
+    color: rgb(189, 13, 13);
+    text-decoration: underline;
+}
+a:visited{
+    color: yellow;
+    text-decoration: line-through;
+}
+a:active{
+    color: green;
+    text-decoration: overline;
+}
+a:hover{
+    color: blue;
+    text-decoration: blink;
+}
